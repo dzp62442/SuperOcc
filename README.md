@@ -15,7 +15,7 @@
 
 ## Method
 3D occupancy prediction plays a pivotal role in the realm of autonomous driving, as it provides a 
-comprehensive understanding of the driving environment.  Most existing methods construct dense scene 
+comprehensive understanding of the driving environment. Most existing methods construct dense scene 
 representations for occupancy prediction, overlooking the inherent sparsity of real-world driving 
 scenes. Recently, 3D superquadric representation has emerged as a promising sparse alternative to 
 dense scene representations due to the strong geometric expressiveness of superquadrics. However, 

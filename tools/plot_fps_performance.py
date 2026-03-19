@@ -335,7 +335,7 @@ data = {
     "Others": [
         # 换成了 PPT 经典的粉紫色和紫色，并调整了重复的 marker
         {"name": "GaussianWorld", "x": 4.4, "y": 22.13, "color": "#70AD47", "marker": "o"},  # 绿色 - 圆形
-        {"name": "QuadricFormer", "x": 4.0, "y": 20.12, "color": "#ED7D31", "marker": "*"},  # 橙色 - 星号
+        {"name": "QuadricFormer", "x": 6.2, "y": 20.12, "color": "#ED7D31", "marker": "*"},  # 橙色 - 星号
         {"name": "GaussianFormer-2", "x": 2.8, "y": 20.02, "color": "#FFC000", "marker": "D"},  # 金黄 - 菱形
         {"name": "GaussianFormer", "x": 2.7, "y": 19.10, "color": "#7030A0", "marker": "^"},  # 紫色 - 上三角 (替换了深蓝)
         {"name": "SurroundOcc", "x": 3.3, "y": 20.30, "color": "#FF33CC", "marker": "p"},  # 粉色 - 五边形 (替换了浅蓝)
