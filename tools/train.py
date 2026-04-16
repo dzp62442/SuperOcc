@@ -81,7 +81,7 @@ def parse_args():
         choices=['none', 'pytorch', 'slurm', 'mpi'],
         default='none',
         help='job launcher')
-    parser.add_argument('--local_rank', type=int, default=0)
+    parser.add_argument('--local_rank', '--local-rank', dest='local_rank', type=int, default=0)
     parser.add_argument(
         '--autoscale-lr',
         action='store_true',
@@ -174,6 +174,11 @@ def main():
 
     # create work_dir
     mmcv.mkdir_or_exist(osp.abspath(cfg.work_dir))
+    if not cfg.get('resume_from', None):
+        auto_resume_ckpt = osp.join(cfg.work_dir, 'latest.pth')
+        if osp.isfile(auto_resume_ckpt):
+            cfg.resume_from = auto_resume_ckpt
+            print(f'Auto resume from {auto_resume_ckpt}')
     # dump config
     cfg.dump(osp.join(cfg.work_dir, osp.basename(args.config)))
     # init the logger before other steps

@@ -1,0 +1,9 @@
+.codex
+build/
+mmdet3d_plugin/
+*.egg-info/
+data/
+__pycache__/
+ckpts/
+work_dirs/
+mmdetection3d/
